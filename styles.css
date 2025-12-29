@@ -1,0 +1,309 @@
+* {
+  padding: 0;      /* на всякий*/
+  margin: 0;
+}
+
+#intro {
+  background-color: #fff3cc;
+  background-image: url("fon.png");
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
+}
+
+#name {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  color:#238095
+  
+}
+
+#rules-manual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 4px solid #6eb1c0	;
+  width: 1212px;
+  height: 169px;
+  background-color: #7ecbdc	;
+}
+
+#generate-word {
+  text-align: center;
+
+  border: 4px solid #6eb1c0	;
+  border-radius: 30px;
+  padding: 20px 0px;
+  width: 700px;
+  font-size: 30px;
+  background-color: #7ecbdc	;
+}
+
+#words-guessed {
+  text-align: center;
+  line-height: 5px;
+
+  border: 4px solid #6eb1c0;
+  border-radius: 30px;
+  padding: 25px 0px;
+  width: 650px;
+  font-size: 30px;
+  background-color: #7ecbdc;
+
+  
+}
+
+#words-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  border: 4px solid #6eb1c0		;
+  height: 300px;
+  width: 100%;
+  font-size: 30px;
+  background-color: #7ecbdc		;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+}
+
+#notifications {
+  text-align: center;
+
+  border: 6px solid #6eb1c0;
+  color: #fffefe;
+  padding: 20px 0;
+  width: 500px;
+  font-size: 25px;
+  background-color: #7ecbdc;
+}
+
+#start-stop {
+  background-color:rgb(117, 174, 186);
+  color: white;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 15px;
+  font-size: 30px;
+  box-shadow: 5px 5px 5px rgb(6, 97, 157);
+}
+
+.player {
+  margin-top: 271px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 40px;      /*   <-- расстояние между именем и полем*/
+  
+}
+
+#player1-name {
+  text-align: center;
+  font-size: 24px;
+  width: 300px;
+  height: 50px;
+  border: 5px solid #38B2CE
+
+}
+
+#player1-word {
+  text-align: center;
+  font-size: 25px;
+  width: 300px;
+  height: 100px;
+  border: 5px solid #38B2CE
+  
+
+}
+
+#player-time {
+  width: 300px;
+  height: 125px;
+}
+
+#player2-name {
+  text-align: center;
+  font-size: 24px;
+  width: 300px;
+  height: 50px;
+  border: 5px solid #38B2CE
+
+}
+
+#player2-word {
+  text-align: center;
+  font-size: 25px;
+  width: 300px;
+  height: 100px;
+  border: 5px solid #38B2CE
+
+}
+
+#player-time {
+  width: 300px;
+  height: 125px;
+}
+
+#timer {
+  background-color: #91bcea;
+  color: #ffffff;
+  padding: 15px 250px;
+  border: none;
+  border-radius: 30px;
+  font-size: 30px;
+  box-shadow: 5px 5px 5px rgb(74, 123, 165);
+}
+
+#player1-timer {
+  font-size: 30px;
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #abe0ec;
+  border: 5px solid rgb(182, 217, 237)
+   
+  
+}
+
+#player2-timer {
+  font-size: 30px;
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #abe0ec;
+  border: 5px solid rgb(182, 217, 237)
+  
+}
+
+#words-list::-webkit-scrollbar {
+  width: 25px;
+  background-color: #595ef6;
+  border-radius: 90px;
+}
+                                          
+#words-list::-webkit-scrollbar-thumb {
+  background-color: #223c50;                       /* спасибо, что работаешь */
+  border-radius: 90px;
+}
+
+#words-list::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #8070d4;
+  border: 6px solid rgba(0, 0, 0, 0.2);
+}
+
+
+#timer {
+
+  /* "Хорошие программисты копируют, великие программисты воруют" */
+
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px #3C13AF;
+  user-select: none;
+  padding: .7em 1.5em;
+  border: 1px solid #3C13AF;
+  border-radius: 5px;
+  outline: none;
+  background: #3C13AF linear-gradient(rgb(25, 65, 186), #38B2CE 80%);
+  box-shadow:
+    0 6px rgb(8, 71, 118),
+    0 3px 15px #151bca,
+    inset 0 1px rgba(255,255,255,.3),
+    inset 0 0 3px rgba(255,255,255,.5);
+  transition: .2s;
+} 
+#timer:hover {
+  background: #4219b4 linear-gradient(#2846bb, #4f7aee 80%);
+}
+#timer:active {
+  background: rgb(67, 116, 173) linear-gradient(rgb(75, 123, 201) 20%, rgb(66, 96, 188));
+  box-shadow:
+    0 2px rgb(86,38,6),
+    0 1px 6px rgba(0,0,0,.4),
+    inset 0 1px rgba(255,255,255,.3),
+    inset 0 0 3px rgba(255,255,255,.5);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+
+}
+
+#start-stop {
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0,0,0,.5);
+  user-select: none;
+  padding: .7em 1.5em;
+  border: 1px solid rgb(132, 8, 8);    /* это граница не активная */
+  border-radius: 5px;
+  outline: none;
+  background: rgb(178, 34, 34) linear-gradient(rgb(178, 34, 34), rgb(220, 39, 39) 80%);   /* это нужно*/
+  box-shadow:
+   0 6px rgb(86,38,6),
+   0 3px 15px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  transition: .2s;                                /* I'm crying*/
+} 
+#start-stop:hover {
+  background: rgb(255, 0, 238) linear-gradient(rgb(233, 33, 33), rgb(196, 25, 25) 80%);   /* и это*/
+}
+#start-stop:active {
+  background: rgb(19, 223, 5) linear-gradient(rgb(164, 13, 13) 20%, rgb(198, 25, 25));   /* при нажатии*/
+  box-shadow:
+   0 2px rgb(224, 6, 6),
+   0 1px 6px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+
+#mydiv { background-color: #bd2424; }
+
+#showmehideme {
+  background-color: #57a8e6;
+  width: 700px;
+  padding: 10px;                  /* c 233 по 271 только чуть помучиться (прям немного) */
+                               
+                          /* все еще не признаю бутстрап, мы не ищем легких путей */
+  
+}
+
+#button {
+  background-color: #57a8e6;
+  position: absolute;
+
+  top: 50px;
+  right: 100px;     /* туда сюда от краев кнопка двигается */
+  
+  width: 160px;     /* Ширина блока */
+  border: 1px solid #000;       /* Параметры рамки */
+  padding: 5px;     /* Поля вокруг текста */
+  font-size: 13px;      /* Размер шрифта */
+  color: #333;      /* Цвет текста */
+  background: #57a8e6;      /* Цвет фона */
+}
+
+.cols {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;            /* расстояние между элементами основного колса */
+}

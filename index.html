@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+  
+<body> 
+    <div id="intro">
+      
+      <h1 id="name">Chess-words</h1>
+
+      
+        <button id="button" onclick="showhide(mydiv)">▲    Инструкция    ▼</button>
+<div id="showmehideme">
+  Два игрока вводят свои имена в отведенные поля, после чего нажимают на кнопку "Старт". <br />
+  После этого запускается таймер и программа выводит одно слово, из которого игрокам предстоит по очереди на время составлять новые слова.
+  Если игрокам удастся угадать все слова до того, как истечет время - они выиграют.
+  Если нет - проиграет тот, у кого первым выйдет время. Удачи!
+</div>
+   
+
+
+  <div class="cols">
+    <div class="player">
+      <input class="player-name" id="player1-name" type="text" placeholder="Имя игрока №1" />
+      <input id="player1-word" type="text" placeholder="Слово" disabled/>
+      <p id="player1-timer" class="player-time">420</p>
+    </div>
+  
+    <main>
+
+      <h4 id="generate-word">
+        Здесь появится слово
+      </h4>
+
+      <h3 id="words-guessed">
+        <p>? слов угадано</p>
+      </h3>
+
+      <h6 id="notifications">
+        Здесь будут появляться мини-подсказки
+      </h6>
+
+      <ul id="words-list">
+        <li>Здесь будут отображаться угаданные вами слова</li>
+        <li>слово</li>
+        <li>слово</li>
+        <li>слово</li>
+        <li>слово</li>
+        <li>слово</li>
+        <li>слово</li>
+        <li>слово</li>
+      </ul>
+
+      <input id="timer" type="button" value="⇦     Ход     ⇨"  />
+
+      <input id="start-stop" type="button" value="Старт"  />
+    </main>
+  
+    <div class="player">
+      <input id="player2-name" type="text" placeholder="Имя игрока №2" />
+      <input id="player2-word" type="text" placeholder="Слово" disabled/>
+      <p id="player2-timer" class="player-time">420</p>
+    </div>
+  </div>
+
+
+    <script src="./words.js"></script>
+    <script src="./gamestates.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
